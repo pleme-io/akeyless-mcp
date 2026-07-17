@@ -1,6 +1,6 @@
 [package]
 name = "akeyless_mcp"
-version = "3.0"
+version = "3.0.0"
 edition = "2024"
 rust-version = "1.89.0"
 description = "The purpose of this application is to provide access to Akeyless API."
