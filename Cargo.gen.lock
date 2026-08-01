@@ -1,6 +1,9 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "cargo_lock_sha256": "4376040c65f1daa0a558bc4700127d67a85e5e123786c782088ee488718ef2c9",
+  "manifest_sha256": {
+    "Cargo.toml": "1f360e50540c8c44f550221a4d5dc688e72a91321db32239d8e35f26c9cc161f"
+  },
   "target_resolves": {
     "base": {
       "aho-corasick-1.1.4": {
