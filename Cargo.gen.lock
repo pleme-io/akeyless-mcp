@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "cargo_lock_sha256": "b32f53e617d1b65bbdcb83463cc6b8fd759f08ac58b4e9d2eb3d272d6a204974",
+  "cargo_lock_sha256": "61b4a3cf534f55a5ad2021310622ecd669a44f2820b88f3c91ce48c7e22032ce",
   "manifest_sha256": {
-    "Cargo.toml": "0d2d904b4460d812d559f9f246fa2508e76813652a041e85bdc984a4c77641ab"
+    "Cargo.toml": "f7765bdc144c9736cb19cfe6ccf534e3027288b8feb66ed0c72bc7a426c3d90a"
   },
   "target_resolves": {
     "base": {
@@ -13,7 +13,7 @@
           "std"
         ]
       },
-      "akeyless_mcp-3.0.1": {
+      "akeyless_mcp-3.0.2": {
         "runtime_dependencies": [
           {
             "name": "anyhow",
@@ -27,7 +27,7 @@
           },
           {
             "name": "clap",
-            "package_key": "clap-4.6.4",
+            "package_key": "clap-4.6.5",
             "kind": "normal",
             "features": [
               "derive"
@@ -458,11 +458,11 @@
           "windows-link"
         ]
       },
-      "clap-4.6.4": {
+      "clap-4.6.5": {
         "runtime_dependencies": [
           {
             "name": "clap_builder",
-            "package_key": "clap_builder-4.6.2",
+            "package_key": "clap_builder-4.6.5",
             "kind": "normal",
             "features": [],
             "uses_default_features": false,
@@ -493,7 +493,7 @@
           "usage"
         ]
       },
-      "clap_builder-4.6.2": {
+      "clap_builder-4.6.5": {
         "runtime_dependencies": [
           {
             "name": "anstream",
@@ -738,7 +738,7 @@
         "build_dependencies": [],
         "features": []
       },
-      "displaydoc-0.2.6": {
+      "displaydoc-0.2.7": {
         "runtime_dependencies": [
           {
             "name": "proc_macro2",
@@ -762,7 +762,7 @@
           },
           {
             "name": "syn",
-            "package_key": "syn-2.0.119",
+            "package_key": "syn-3.0.3",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -1301,7 +1301,7 @@
         "build_dependencies": [],
         "features": []
       },
-      "http-1.4.2": {
+      "http-1.5.0": {
         "runtime_dependencies": [
           {
             "name": "bytes",
@@ -1344,7 +1344,7 @@
           },
           {
             "name": "http",
-            "package_key": "http-1.4.2",
+            "package_key": "http-1.5.0",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -1380,7 +1380,7 @@
           },
           {
             "name": "http",
-            "package_key": "http-1.4.2",
+            "package_key": "http-1.5.0",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -1466,7 +1466,7 @@
           },
           {
             "name": "http",
-            "package_key": "http-1.4.2",
+            "package_key": "http-1.5.0",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -1561,7 +1561,7 @@
         "runtime_dependencies": [
           {
             "name": "http",
-            "package_key": "http-1.4.2",
+            "package_key": "http-1.5.0",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -1594,7 +1594,7 @@
           },
           {
             "name": "rustls",
-            "package_key": "rustls-0.23.42",
+            "package_key": "rustls-0.23.43",
             "kind": "normal",
             "features": [],
             "uses_default_features": false,
@@ -1696,7 +1696,7 @@
           },
           {
             "name": "http",
-            "package_key": "http-1.4.2",
+            "package_key": "http-1.5.0",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -1726,7 +1726,7 @@
           },
           {
             "name": "ipnet",
-            "package_key": "ipnet-2.12.0",
+            "package_key": "ipnet-2.12.1",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -1823,7 +1823,7 @@
         "runtime_dependencies": [
           {
             "name": "displaydoc",
-            "package_key": "displaydoc-0.2.6",
+            "package_key": "displaydoc-0.2.7",
             "kind": "normal",
             "features": [],
             "uses_default_features": false,
@@ -1898,7 +1898,7 @@
         "runtime_dependencies": [
           {
             "name": "displaydoc",
-            "package_key": "displaydoc-0.2.6",
+            "package_key": "displaydoc-0.2.7",
             "kind": "normal",
             "features": [],
             "uses_default_features": false,
@@ -2100,7 +2100,7 @@
         "runtime_dependencies": [
           {
             "name": "displaydoc",
-            "package_key": "displaydoc-0.2.6",
+            "package_key": "displaydoc-0.2.7",
             "kind": "normal",
             "features": [],
             "uses_default_features": false,
@@ -2284,7 +2284,7 @@
           "std"
         ]
       },
-      "ipnet-2.12.0": {
+      "ipnet-2.12.1": {
         "runtime_dependencies": [],
         "build_dependencies": [],
         "features": [
@@ -2529,7 +2529,7 @@
           },
           {
             "name": "rustls",
-            "package_key": "rustls-0.23.42",
+            "package_key": "rustls-0.23.43",
             "kind": "normal",
             "features": [
               "std"
@@ -2679,7 +2679,7 @@
           },
           {
             "name": "rustls",
-            "package_key": "rustls-0.23.42",
+            "package_key": "rustls-0.23.43",
             "kind": "normal",
             "features": [
               "std"
@@ -2993,7 +2993,7 @@
           },
           {
             "name": "http",
-            "package_key": "http-1.4.2",
+            "package_key": "http-1.5.0",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -3095,7 +3095,7 @@
           },
           {
             "name": "rustls",
-            "package_key": "rustls-0.23.42",
+            "package_key": "rustls-0.23.43",
             "kind": "normal",
             "features": [
               "std",
@@ -3354,7 +3354,7 @@
           },
           {
             "name": "schemars",
-            "package_key": "schemars-1.2.1",
+            "package_key": "schemars-1.2.2",
             "kind": "normal",
             "features": [
               "chrono04"
@@ -3509,7 +3509,7 @@
           "std"
         ]
       },
-      "rustls-0.23.42": {
+      "rustls-0.23.43": {
         "runtime_dependencies": [
           {
             "name": "once_cell",
@@ -3705,7 +3705,7 @@
           "schemars_derive"
         ]
       },
-      "schemars-1.2.1": {
+      "schemars-1.2.2": {
         "runtime_dependencies": [
           {
             "name": "chrono04",
@@ -3739,7 +3739,7 @@
           },
           {
             "name": "schemars_derive",
-            "package_key": "schemars_derive-1.2.1",
+            "package_key": "schemars_derive-1.2.2",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -3829,7 +3829,7 @@
         "build_dependencies": [],
         "features": []
       },
-      "schemars_derive-1.2.1": {
+      "schemars_derive-1.2.2": {
         "runtime_dependencies": [
           {
             "name": "proc_macro2",
@@ -3853,7 +3853,7 @@
           },
           {
             "name": "serde_derive_internals",
-            "package_key": "serde_derive_internals-0.29.1",
+            "package_key": "serde_derive_internals-0.30.0",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -3863,7 +3863,7 @@
           },
           {
             "name": "syn",
-            "package_key": "syn-2.0.119",
+            "package_key": "syn-3.0.3",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -3993,6 +3993,47 @@
           {
             "name": "syn",
             "package_key": "syn-2.0.119",
+            "kind": "normal",
+            "features": [
+              "clone-impls",
+              "derive",
+              "parsing",
+              "printing"
+            ],
+            "uses_default_features": false,
+            "optional": false,
+            "target": null,
+            "tree": "target"
+          }
+        ],
+        "build_dependencies": [],
+        "features": []
+      },
+      "serde_derive_internals-0.30.0": {
+        "runtime_dependencies": [
+          {
+            "name": "proc_macro2",
+            "package_key": "proc-macro2-1.0.107",
+            "kind": "normal",
+            "features": [],
+            "uses_default_features": false,
+            "optional": false,
+            "target": null,
+            "tree": "target"
+          },
+          {
+            "name": "quote",
+            "package_key": "quote-1.0.47",
+            "kind": "normal",
+            "features": [],
+            "uses_default_features": false,
+            "optional": false,
+            "target": null,
+            "tree": "target"
+          },
+          {
+            "name": "syn",
+            "package_key": "syn-3.0.3",
             "kind": "normal",
             "features": [
               "clone-impls",
@@ -4467,7 +4508,7 @@
         "runtime_dependencies": [
           {
             "name": "displaydoc",
-            "package_key": "displaydoc-0.2.6",
+            "package_key": "displaydoc-0.2.7",
             "kind": "normal",
             "features": [],
             "uses_default_features": false,
@@ -4605,7 +4646,7 @@
           },
           {
             "name": "tokio_macros",
-            "package_key": "tokio-macros-2.7.1",
+            "package_key": "tokio-macros-2.7.2",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -4633,7 +4674,7 @@
           "windows-sys"
         ]
       },
-      "tokio-macros-2.7.1": {
+      "tokio-macros-2.7.2": {
         "runtime_dependencies": [
           {
             "name": "proc_macro2",
@@ -4657,7 +4698,7 @@
           },
           {
             "name": "syn",
-            "package_key": "syn-2.0.119",
+            "package_key": "syn-3.0.3",
             "kind": "normal",
             "features": [
               "full"
@@ -4675,7 +4716,7 @@
         "runtime_dependencies": [
           {
             "name": "rustls",
-            "package_key": "rustls-0.23.42",
+            "package_key": "rustls-0.23.43",
             "kind": "normal",
             "features": [
               "std"
@@ -4895,7 +4936,7 @@
           },
           {
             "name": "http",
-            "package_key": "http-1.4.2",
+            "package_key": "http-1.5.0",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -5597,7 +5638,7 @@
         "runtime_dependencies": [
           {
             "name": "displaydoc",
-            "package_key": "displaydoc-0.2.6",
+            "package_key": "displaydoc-0.2.7",
             "kind": "normal",
             "features": [],
             "uses_default_features": false,
@@ -6413,7 +6454,7 @@
     "aho-corasick-1.1.4": {
       "edition": "2021"
     },
-    "akeyless_mcp-3.0.1": {
+    "akeyless_mcp-3.0.2": {
       "edition": "2024",
       "binaries": [
         {
@@ -6472,7 +6513,7 @@
     "chrono-0.4.45": {
       "edition": "2021"
     },
-    "clap-4.6.4": {
+    "clap-4.6.5": {
       "edition": "2024",
       "binaries": [
         {
@@ -6481,7 +6522,7 @@
         }
       ]
     },
-    "clap_builder-4.6.2": {
+    "clap_builder-4.6.5": {
       "edition": "2024"
     },
     "clap_derive-4.6.4": {
@@ -6513,7 +6554,7 @@
       "edition": "2021",
       "proc_macro": true
     },
-    "displaydoc-0.2.6": {
+    "displaydoc-0.2.7": {
       "edition": "2021",
       "proc_macro": true
     },
@@ -6570,7 +6611,7 @@
     "heck-0.5.0": {
       "edition": "2021"
     },
-    "http-1.4.2": {
+    "http-1.5.0": {
       "edition": "2021"
     },
     "http-body-1.1.0": {
@@ -6630,7 +6671,7 @@
     "indexmap-2.14.0": {
       "edition": "2024"
     },
-    "ipnet-2.12.0": {
+    "ipnet-2.12.1": {
       "edition": "2018"
     },
     "is_terminal_polyfill-1.70.2": {
@@ -6748,7 +6789,7 @@
     "rustc-hash-2.1.3": {
       "edition": "2021"
     },
-    "rustls-0.23.42": {
+    "rustls-0.23.43": {
       "edition": "2021",
       "build_script": "build.rs"
     },
@@ -6769,14 +6810,14 @@
       "edition": "2021",
       "build_script": "build.rs"
     },
-    "schemars-1.2.1": {
+    "schemars-1.2.2": {
       "edition": "2021"
     },
     "schemars_derive-0.8.22": {
       "edition": "2021",
       "proc_macro": true
     },
-    "schemars_derive-1.2.1": {
+    "schemars_derive-1.2.2": {
       "edition": "2021",
       "proc_macro": true
     },
@@ -6794,6 +6835,13 @@
     },
     "serde_derive_internals-0.29.1": {
       "edition": "2015",
+      "lib_target": {
+        "name": "serde_derive_internals",
+        "path": "lib.rs"
+      }
+    },
+    "serde_derive_internals-0.30.0": {
+      "edition": "2021",
       "lib_target": {
         "name": "serde_derive_internals",
         "path": "lib.rs"
@@ -6868,7 +6916,7 @@
     "tokio-1.53.1": {
       "edition": "2021"
     },
-    "tokio-macros-2.7.1": {
+    "tokio-macros-2.7.2": {
       "edition": "2021",
       "proc_macro": true
     },
