@@ -18,7 +18,15 @@ struct Cli {
     #[command(subcommand)]
     command: Option<Command>,
 
-    /// API key (overrides env and config file)
+    /// DEPRECATED and NOT READ. A key passed here is visible in the
+    /// process table to every local user and lands in shell history,
+    /// so this flag is not wired to the client — `mcp::AkeylessMcpMcp`
+    /// calls `auth::resolve_api_key(None, ..)` on purpose. Set
+    /// `AKEYLESS_MCP_API_KEY`, or put the key in the `api_key_file`
+    /// named by the config (default `~/.config/akeyless_mcp/api-key`).
+    ///
+    /// Kept accepted rather than removed so no existing invocation
+    /// starts failing to parse; every use warns.
     #[arg(long)]
     api_key: Option<String>,
 
@@ -41,12 +49,32 @@ async fn main() -> ExitCode {
     match cli.command {
         None | Some(Command::Serve) => {
             init_tracing(true);
+            warn_on_argv_api_key(cli.api_key.as_deref());
             if let Err(e) = mcp::run().await {
                 eprintln!("MCP server error: {e}");
                 return ExitCode::FAILURE;
             }
             ExitCode::SUCCESS
         }
+    }
+}
+
+/// Say out loud that `--api-key` was given and was not used.
+///
+/// Silence here would be worse than the flag itself: an operator who
+/// passes a key on the command line has already paid the exposure (the
+/// process table, their shell history) and would otherwise get an
+/// opaque "no API key" failure from `resolve_api_key`, with no hint
+/// that the value they supplied was dropped on the floor.
+fn warn_on_argv_api_key(api_key: Option<&str>) {
+    if api_key.is_some() {
+        tracing::warn!(
+            "--api-key is deprecated and is NOT read: a credential on the command \
+             line is visible in the process table to every local user and is \
+             written to shell history. Set AKEYLESS_MCP_API_KEY, or write the key \
+             to the configured api_key_file (default \
+             ~/.config/akeyless_mcp/api-key, mode 0600)."
+        );
     }
 }
 

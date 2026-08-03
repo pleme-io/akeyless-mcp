@@ -11,7 +11,10 @@ pub enum AkeylessMcpError {
     #[error("JSON parse error: {0}")]
     Json(#[from] serde_json::Error),
 
-    #[error("API key not found -- set --api-key, AKEYLESS_MCP_API_KEY, or create {path}")]
+    // Deliberately does NOT mention --api-key: pointing an operator at a
+    // flag is what puts the credential in the process table and their
+    // shell history in the first place.
+    #[error("API key not found -- set AKEYLESS_MCP_API_KEY, or create {path} (mode 0600)")]
     NoApiKey { path: PathBuf },
 }
 

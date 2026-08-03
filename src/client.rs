@@ -1,5 +1,7 @@
 use crate::api::types::*;
 use crate::error::{AkeylessMcpError, Result};
+use cofre_secret::Secret;
+use std::sync::Arc;
 
 /// HTTP client for the akeyless-mcp API.
 ///
@@ -8,12 +10,20 @@ use crate::error::{AkeylessMcpError, Result};
 pub struct AkeylessMcpClient {
     inner: reqwest::Client,
     base_url: String,
-    api_key: String,
+    /// The API key. A [`Secret`] rather than a `String` specifically
+    /// because this struct derives `Debug` and is embedded in another
+    /// struct that derives `Debug` — a `{:?}` anywhere up that chain
+    /// used to render the credential verbatim. `Secret` renders
+    /// `Secret(***)`.
+    ///
+    /// `Arc` so the struct stays `Clone`, which `rmcp`'s tool router
+    /// requires; `Secret` is deliberately not `Clone`.
+    api_key: Arc<Secret>,
 }
 
 impl AkeylessMcpClient {
     /// Create a new client.
-    pub fn new(base_url: &str, api_key: &str) -> Result<Self> {
+    pub fn new(base_url: &str, api_key: Arc<Secret>) -> Result<Self> {
         let inner = reqwest::Client::builder()
             .timeout(std::time::Duration::from_secs(60))
             .user_agent("pleme-io/akeyless_mcp 3.0")
@@ -23,7 +33,7 @@ impl AkeylessMcpClient {
         Ok(Self {
             inner,
             base_url: base_url.trim_end_matches('/').to_string(),
-            api_key: api_key.to_string(),
+            api_key,
         })
     }
 

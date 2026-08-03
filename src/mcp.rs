@@ -21161,9 +21161,11 @@ struct AkeylessMcpMcp {
 impl AkeylessMcpMcp {
     fn new() -> Result<Self, String> {
         let config = AkeylessMcpConfig::load();
+        // `None`: the API key is deliberately NOT taken from argv. See
+        // the `--api-key` deprecation note in main.rs.
         let api_key = auth::resolve_api_key(None, &config).map_err(|e| e.to_string())?;
         let client =
-            AkeylessMcpClient::new(&config.api_url, &api_key).map_err(|e| e.to_string())?;
+            AkeylessMcpClient::new(&config.api_url, api_key).map_err(|e| e.to_string())?;
 
         Ok(Self {
             client,
