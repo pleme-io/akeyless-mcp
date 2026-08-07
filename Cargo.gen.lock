@@ -1,19 +1,19 @@
 {
   "schema_version": 2,
-  "cargo_lock_sha256": "a942cc2f9c6d0aad9f8e48771673ed6dbdf2fb594c871a109981e8c98d5a6dc8",
+  "cargo_lock_sha256": "6299923bb4277486157b69fe50f737f603cfbd25f21bd0975d6d980ba44af464",
   "manifest_sha256": {
-    "Cargo.toml": "6d060ded4331a4c66fb8c55a9758fb31f1290feab6759a45a54f72fcc72c8d94"
+    "Cargo.toml": "7c637d9d42772731a8eb7c6c1c1e753d84afe50099bb75598473a359a1a7ec46"
   },
   "target_resolves": {
     "base": {
-      "aho-corasick-1.1.4": {
+      "aho-corasick-1.1.5": {
         "runtime_dependencies": [],
         "build_dependencies": [],
         "features": [
           "std"
         ]
       },
-      "akeyless_mcp-3.0.2": {
+      "akeyless_mcp-3.0.3": {
         "runtime_dependencies": [
           {
             "name": "anyhow",
@@ -27,7 +27,7 @@
           },
           {
             "name": "clap",
-            "package_key": "clap-4.6.5",
+            "package_key": "clap-4.6.6",
             "kind": "normal",
             "features": [
               "derive"
@@ -458,11 +458,11 @@
           "windows-link"
         ]
       },
-      "clap-4.6.5": {
+      "clap-4.6.6": {
         "runtime_dependencies": [
           {
             "name": "clap_builder",
-            "package_key": "clap_builder-4.6.5",
+            "package_key": "clap_builder-4.6.6",
             "kind": "normal",
             "features": [],
             "uses_default_features": false,
@@ -493,7 +493,7 @@
           "usage"
         ]
       },
-      "clap_builder-4.6.5": {
+      "clap_builder-4.6.6": {
         "runtime_dependencies": [
           {
             "name": "anstream",
@@ -2338,7 +2338,7 @@
         "runtime_dependencies": [
           {
             "name": "regex_automata",
-            "package_key": "regex-automata-0.4.16",
+            "package_key": "regex-automata-0.4.18",
             "kind": "normal",
             "features": [
               "dfa-build",
@@ -2929,7 +2929,7 @@
         "build_dependencies": [],
         "features": []
       },
-      "regex-automata-0.4.16": {
+      "regex-automata-0.4.18": {
         "runtime_dependencies": [
           {
             "name": "regex_syntax",
@@ -5226,7 +5226,7 @@
           },
           {
             "name": "regex_automata",
-            "package_key": "regex-automata-0.4.16",
+            "package_key": "regex-automata-0.4.18",
             "kind": "normal",
             "features": [
               "std"
@@ -6451,10 +6451,10 @@
     }
   },
   "per_crate": {
-    "aho-corasick-1.1.4": {
+    "aho-corasick-1.1.5": {
       "edition": "2021"
     },
-    "akeyless_mcp-3.0.2": {
+    "akeyless_mcp-3.0.3": {
       "edition": "2024",
       "binaries": [
         {
@@ -6513,7 +6513,7 @@
     "chrono-0.4.45": {
       "edition": "2021"
     },
-    "clap-4.6.5": {
+    "clap-4.6.6": {
       "edition": "2024",
       "binaries": [
         {
@@ -6522,7 +6522,7 @@
         }
       ]
     },
-    "clap_builder-4.6.5": {
+    "clap_builder-4.6.6": {
       "edition": "2024"
     },
     "clap_derive-4.6.4": {
@@ -6764,7 +6764,7 @@
       "edition": "2021",
       "proc_macro": true
     },
-    "regex-automata-0.4.16": {
+    "regex-automata-0.4.18": {
       "edition": "2021"
     },
     "regex-syntax-0.8.11": {
