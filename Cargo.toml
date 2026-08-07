@@ -17,7 +17,7 @@ clap = { version = "4", features = ["derive"] }
 # Display / AsRef<str> / AsRef<OsStr>, so the API key cannot be
 # interpolated into a format string, printed by a derived `Debug`, or
 # handed to `Command::arg`. Dependency-free.
-cofre-secret = { git = "https://github.com/pleme-io/cofre" }
+cofre-secret = "0.1"
 heck = "0.5"
 reqwest = { version = "0.12", features = ["json", "rustls-tls"], default-features = false }
 rmcp = { version = "0.15", features = ["server", "transport-io"] }
